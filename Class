@@ -1,0 +1,29 @@
+public class Main {
+
+    public static void main(String[] args)
+    {
+       Box mybox=new Box();
+        mybox.Weight=100;
+        mybox.Depth=50;
+        mybox.Height=250;
+        mybox.Paralepiped();
+
+    }
+}
+
+public class Box
+{
+   public int Weight;
+    public int Height;
+    public int Depth;
+
+
+
+    public int Paralepiped()
+    {
+        int result=+Weight*Height*Depth;
+        System.out.println("Объем параллелепипеда равен:"+result);
+        return result;
+    }
+
+}
