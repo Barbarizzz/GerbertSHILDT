@@ -1,0 +1,49 @@
+public class Box
+{
+
+    public static void main(String[] args)
+    {
+        Box mybox1=new Box(10,20,30);
+        double vol;
+        vol=mybox1.volume();
+        System.out.println("Объем mybox1="+vol);
+
+        Box mybox2=new Box();
+        vol=mybox2.volume();
+        System.out.println("Объем mybox2="+vol);
+
+        Box mycube3=new Box(7);
+        vol=mycube3.volume();
+        System.out.println("Объем mybox3="+vol);
+
+    }
+
+    double weight;
+    double height;
+    double depth;
+
+   public Box(double weight,double height,double depth)
+    {
+        this.depth=depth;
+        this.height=height;
+        this.weight=weight;
+    }
+
+    public Box()
+    {
+        depth=-1;
+        weight=-1;
+        height=-1;
+    }
+
+    public Box(double len)
+    {
+        weight=height=depth=len;
+    }
+
+    double volume()
+    {
+        return weight*height*depth;
+    }
+
+}
