@@ -1,0 +1,19 @@
+public class VarArgs
+{
+    static void vaTest(int v)
+    {
+        System.out.print("Количество аргументов "+ v.lenght + "Содержимое" );
+
+    for(int x : v)
+    {
+        System.out.print(x+ " ");
+        System.out.println();
+    }
+
+    public static void Main(String [] args)
+    {
+        vaTest(10);
+        vaTest(10,20,3);
+        vaTest();
+    }
+}
