@@ -1,0 +1,24 @@
+public class Test {
+
+    int a,b;
+    Test(int i,int j)
+    {
+        a=i;
+        b=j;
+    }
+
+    void  meth(Test o)
+    {
+        o.a*=2;
+        o.b/=2;
+    }
+
+    public static void main(String[] args) {
+        Test test1=new Test(15,20);
+        System.out.println("o.a and o.b до вызова"+ test1.a+ " "+ test1.b);
+        test1.meth(test1);
+        System.out.println("o.a and o.b после вызова"+ test1.a+ " "+ test1.b);
+
+
+    }
+}
